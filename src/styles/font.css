@@ -1,0 +1,11 @@
+@font-face {
+  font-family: jost;
+  src: url(../assets/fonts/Jost-VariableFont_wght.ttf) format('truetype');
+  /* font-weight: 800; */
+}
+
+@font-face {
+  font-family: jost;
+  font-style: italic;
+  src: url(../assets/fonts/Jost-Italic-VariableFont_wght.ttf) format('truetype');
+}
