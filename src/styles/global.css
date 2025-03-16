@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+
+  /* *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  } */
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+
+  }
+
+  html {
+    /* font-family: sans-serif; */
+    /* color: #333; */
+  }
+
+
+  :root {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html,
+  body {
+    height: 100%;
+    scroll-behavior: smooth;
+    /* font-family: Poppins, Roboto, sans-serif; */
+  }
+
+  body {
+    @apply text-slate-600 dark:text-slate-400 h-full m-0 p-0 min-h-full bg-white dark:bg-gray-950;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+
+  svg {
+    padding: 0 !important;
+    vertical-align: -.125em !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+}
