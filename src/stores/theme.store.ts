@@ -10,11 +10,11 @@ interface IThemeStore {
 
 export const useThemeStore = create<IThemeStore>((set, get) => ({
 	theme: 'system',
-	setTheme(theme) {
+	setTheme: (theme) => {
 		localStorage.setItem('theme', theme);
 		get().persistTheme();
 	},
-	persistTheme() {
+	persistTheme: () => {
 		const preferredTheme = localStorage.getItem('theme') as PreferThemeType || PreferThemeEnum.SYSTEM;
 
 		if (preferredTheme === PreferThemeEnum.DARK) {
