@@ -1,5 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+/** @type {import('tailwindcss').Config} */
 const config = {
 	darkMode: 'class',
 	content: [
@@ -28,10 +29,7 @@ const config = {
 					// 800: '#002C73B8',
 					900: '#04050a',
 				}
-			},
-			// fontFamily: {
-			// 	poppins: ['"Poppins-Regular"', 'sans-serif'],
-			// },
+			}
 		},
 	},
 	plugins: [],
