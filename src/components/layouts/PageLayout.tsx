@@ -6,6 +6,6 @@ type Props = {
 	children: ReactNode;
 }
 
-export default function PageLayout({ className, children }: Props) {
-	return <div className={twMerge('grid grid-cols-12 md:h-screen', className)}>{children}</div>
+export default function PageLayoutComponent({ className, children }: Props) {
+	return <div className={twMerge('p-3', className)}>{children}</div>
 }

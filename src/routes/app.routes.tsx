@@ -10,9 +10,6 @@ export const applicationRoute = createBrowserRouter([
 		path: "/",
 		element: <Suspense><LazyHomePage /></Suspense>
 	},
-
-
-
 	{
 		path: '*',
 		element: <Navigate to="not-found" replace />,

@@ -1,10 +1,3 @@
-
-export interface ITechStack {
-	id: string;
-	name: string;
-	icons: string;
-}
-
 export enum PreferThemeEnum {
 	DARK = 'dark',
 	LIGHT = 'light',
@@ -12,3 +5,11 @@ export enum PreferThemeEnum {
 }
 
 export type PreferThemeType = `${PreferThemeEnum}`;
+
+export type NotificationType = `${NotificationTypeEnum}`;
+
+export enum NotificationTypeEnum {
+	SUCCESS = 'success',
+	ERROR = 'error',
+	INFO = 'info'
+}
