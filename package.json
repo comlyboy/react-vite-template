@@ -5,13 +5,15 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build --sourcemap",
+		"build": "vite build",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
 	"dependencies": {
 		"axios": "^1.9.0",
 		"classnames": "^2.5.1",
+		"lucide-react": "^0.511.0",
+		"radix-ui": "^1.4.2",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
 		"react-hook-form": "^7.56.4",
