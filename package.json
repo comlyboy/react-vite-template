@@ -5,7 +5,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build",
+		"build": "NODE_ENV=staging vite build --mode staging",
+		"build:prod": "NODE_ENV=production vite build --mode production",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
@@ -20,6 +21,7 @@
 		"react-router-dom": "^7.6.0",
 		"sonner": "^2.0.3",
 		"tailwind-merge": "^3.3.0",
+		"vite-plugin-pwa": "^1.0.3",
 		"zustand": "^5.0.5"
 	},
 	"devDependencies": {
