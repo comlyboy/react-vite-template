@@ -17,6 +17,7 @@ export default defineConfig(configuration => {
 		define: {
 			__BASE_API_URL__: JSON.stringify((apiUrlsMap as any)[configuration.mode]) || apiUrlsMap.development
 		},
+		mode: 'production',
 		plugins: [
 			react({
 				// https://github.com/vitejs/vite-plugin-react-swc/issues/24
@@ -26,7 +27,7 @@ export default defineConfig(configuration => {
 				injectRegister: 'auto',
 				registerType: 'autoUpdate',
 				srcDir: 'src',
-				mode: configuration.mode === 'development' ? 'development' : 'production',
+				mode: 'production',
 				manifest: {
 					name: 'Locora',
 					short_name: 'Locora',
@@ -79,17 +80,3 @@ export default defineConfig(configuration => {
 		}
 	}
 });
-
-// export default defineConfig((d) => {
-// 	const config = getViteConfiguration({
-// 		viteOptions: {
-// 			build: {
-// 				rollupOptions: {
-// 					external: ['virtual:pwa-register']
-// 				}
-// 			}
-// 		}
-// 	})(d);
-// 	console.log('configgg', config);
-// 	return config;
-// });
